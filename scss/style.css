@@ -1,0 +1,195 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  background-image: url(/image/bg1.jpg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  border-radius: 10px;
+  border: 4px solid #FFFFFF !important;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #FFFFFF;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+}
+
+.animate-left {
+  position: relative;
+  -webkit-animation: animateleft 0.8s;
+          animation: animateleft 0.8s;
+}
+
+@-webkit-keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.animate-left-close {
+  position: relative;
+  -webkit-animation: animateleft-clos 0.8s;
+          animation: animateleft-clos 0.8s;
+}
+
+@-webkit-keyframes animateleft-close {
+  from {
+    left: 0px;
+    opacity: 0;
+  }
+  to {
+    left: -300;
+    opacity: 1;
+  }
+}
+
+@keyframes animateleft-close {
+  from {
+    left: 0px;
+    opacity: 0;
+  }
+  to {
+    left: -300;
+    opacity: 1;
+  }
+}
+
+.mybutton:hover {
+  color: #000000;
+  background-color: #CCCCCC !important;
+}
+
+.bar-block .bar-item {
+  width: 100%;
+  display: block;
+  padding: 16px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+}
+
+.my-large {
+  font-size: 22px !important;
+}
+
+.mybutton {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.mywhite {
+  color: #FFFFFF;
+  background-color: transparent !important;
+}
+
+.my-largexx {
+  font-size: 30px !important;
+}
+
+.mybold {
+  font-weight: bold;
+}
+
+.myfont1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.myfont2 {
+  font-size: 22px;
+  font-weight: lighter;
+  color: #FFFFFF;
+}
+
+.animate-Opacity {
+  position: relative;
+  -webkit-animation: animateOpacity 0.8s;
+          animation: animateOpacity 0.8s;
+}
+
+@-webkit-keyframes animateOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+/*# sourceMappingURL=style.css.map */

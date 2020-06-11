@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="sidebar bar-block animate-left" style="display:none;z-index:5" id="mySidebar">
+    <button class="bar-item mybutton my-large" onclick="w3_close()">Close &times;</button>
+    <a href="#" class="bar-item mybutton">Home</a>
+    <a href="#" class="bar-item mybutton">Workshop 1</a>
+    <a href="#" class="bar-item mybutton">Workshop 2</a>
+    <a href="#" class="bar-item mybutton">Workshop 3</a>
+    <a href="#" class="bar-item mybutton">Workshop 4</a>
+    <a href="#" class="bar-item mybutton">Workshop 5</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="overlay animate-Opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+  <div>
+    <button class="mybutton mywhite my-largexx" onclick="w3_open()">&#9776;</button>
+  </div>
+  <div class="container center">  
+    <div class="row text-center">
+      <div class="col-12 col-md-5 text-md-right">
+        <img src="/image/myImage.jpg" alt="กู้ชาติ ยินดีฉัตร" width="150" height="150">
+      </div>
+      <div class="col-12 col-md-7 text-md-left">
+        <div class="row text-center mt-2 mt-md-0 text-md-left">
+          <div class="col-12">
+            <p class="myfont1">Koochat Yindeechat</p>
+          </div>
+        </div>
+        <div class="row text-center text-md-left">
+          <div class="col-12">
+            <p class="myfont2">Student</p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <button class="btn btn-outline-light">Facebook</button>
+            <button class="btn btn-outline-light">Instragram</button>
+            <button class="btn btn-outline-light">Youtube</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
