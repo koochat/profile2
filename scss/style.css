@@ -45,6 +45,8 @@ img {
   position: relative;
   -webkit-animation: animateleft 0.8s;
           animation: animateleft 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 @-webkit-keyframes animateleft {
@@ -65,34 +67,6 @@ img {
   }
   to {
     left: 0;
-    opacity: 1;
-  }
-}
-
-.animate-left-close {
-  position: relative;
-  -webkit-animation: animateleft-clos 0.8s;
-          animation: animateleft-clos 0.8s;
-}
-
-@-webkit-keyframes animateleft-close {
-  from {
-    left: 0px;
-    opacity: 0;
-  }
-  to {
-    left: -300;
-    opacity: 1;
-  }
-}
-
-@keyframes animateleft-close {
-  from {
-    left: 0px;
-    opacity: 0;
-  }
-  to {
-    left: -300;
     opacity: 1;
   }
 }

@@ -9,22 +9,16 @@
 .animate-left{
     position: relative;
     animation: animateleft 0.8s;
+    animation-direction: alternate; 
 }
 @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 
-.animate-left-close{
-    position: relative;
-    animation: animateleft-clos 0.8s;
-}
-@keyframes animateleft-close{from{left:0px;opacity:0} to{left:-300;opacity:1}}
-
-
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .sidebar {width: 250px;}
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .sidebar {width: 250px;}
   }
