@@ -9,7 +9,6 @@
 .animate-left{
     position: relative;
     animation: animateleft 0.8s;
-    animation-direction: alternate; 
 }
 @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 
