@@ -27,6 +27,7 @@
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    font-family: cursive;
 }
 .mywhite{
     color: $white;
@@ -39,12 +40,14 @@
     font-weight: bold;
 }
 .myfont1{
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     color: $white;
+    font-family: cursive;
 }
 .myfont2{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: lighter;
     color: $white;
+    font-family: cursive;
 }
